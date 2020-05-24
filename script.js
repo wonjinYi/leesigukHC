@@ -17,9 +17,7 @@ async function makeMarker(){
   // 마커 및 정보창 생성
   let marker = [];
   let infoWindow = [];
- // let priceWindow = [];
   let contentString = [];
- // let priceString = [];
 
   for(let i=0; i<Object.keys(DATA).length; i++){
     //마커 생성
@@ -34,8 +32,8 @@ async function makeMarker(){
     });
 
     //정보창 생성
-    //var infoMapURL = 'https://map.naver.com/v5/search/' + DATA[i]["기관명"];
-    var infoMapURL = 'https://m.map.naver.com/search2/search.nhn?query=' + DATA[i]["기관명"]+'&sm=hty&style=v5';
+    var infoMapURL = 'https://map.naver.com/v5/search/' + DATA[i]["기관명"];
+    //var infoMapURL = 'https://m.map.naver.com/search2/search.nhn?query=' + DATA[i]["기관명"]+'&sm=hty&style=v5';
     contentString = [
       '<div style="padding:10px; text-align:left; color:#262626;">',
       '   <a style="display:inline; text-decoration: none; font-size:20px; color:#262626;" href="'
@@ -60,33 +58,11 @@ async function makeMarker(){
       pixelOffset: new naver.maps.Point(0, -10)
     });
 
-    //가격표시창 생성
-    /*
-    priceString = [
-      '<div style="padding:10px; text-align:left; color:#262626;">',
-      '   <p style="margin:0;">',
-      '       '+isNull(DATA[i]['일반용가격']),
-      '   </p>',
-      '</div>'
-    ].join('');
-
-    priceWindow[i] = new naver.maps.InfoWindow({
-      content: priceString,
-      backgroundColor: "rgba(255,255,255,0.6)",
-      borderColor: "#727272",
-      borderWidth: 2,
-      anchorSize: new naver.maps.Size(0, 0),
-      pixelOffset: new naver.maps.Point(0, -10)
-    });
-    priceWindow[i].open(map, marker[i]);
-    */
 
     naver.maps.Event.addListener(marker[i], "click", function(e) {
       if (infoWindow[i].getMap()) {
           infoWindow[i].close();
-          //priceWindow[i].open(map, marker[i]);
       } else {
-          //priceWindow[i].close();
           infoWindow[i].open(map, marker[i]);
       }
     });
