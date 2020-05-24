@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* for basic html elements */
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin : 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* for user elements */
+header{
+    text-align : center;
+    padding-top : 10px;
+    /*padding-bottom : 10px;*/
+}
+nav {
+    text-align : center;
+    /* padding-top : 10px; */
+    padding-bottom : 10px;
+}
+article {
+    display : block;
+    text-align : center;
+}
+footer{
+    text-align : center;
+    padding-top : 10px;
+    padding-bottom : 10px;
+}
+footer p{
+    margin:0px;
+}
+
+.buttonBase {
+    display : inline-block; 
+    padding-left : 30px;
+    padding-right : 30px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+
+}
+
+#btn_github{
+    background-color : #585858;
+    color : #FFFFFF;
+} #btn_github:hover{
+    background-color : #3d3d3d;
+}
+
+#btn_report{
+    background-color : #EB5757;
+    color : #FFFFFF;
+} #btn_report:hover{
+    background-color : rgb(189, 69, 69);
+}
+
+#btn_report_forapp{
+    background-color : #EB5757;
+    color : #FFFFFF;
+} #btn_report:hover{
+    background-color : rgb(189, 69, 69);
+}
+
+#btn_start{
+    background-color : #18A0FB;
+    color : #FFFFFF;
+    padding-left : 250px;
+    padding-right : 250px;
+} #btn_start:hover{
+    background-color : rgb(18, 123, 194);
+}
+
+#btn_goindex{
+    background-color : #585858;
+    color : #FFFFFF;
+} #btn_goindex:hover{
+    background-color : #3d3d3d;
+}
+
+#_video{
+    width : 808px;
+    height : 455px; 
+}
+
+@media screen and (max-width: 769px) {
+    #btn_start{
+        padding-left : 0px;
+        padding-right : 0px;
+        margin-bottom : 10px;
+        width : 91%;
+    }
+    #btn_github{
+        padding-left : 0px;
+        padding-right : 3px;
+        margin-right : 2px;
+        width : 44%;
+    }
+    #btn_report{
+        padding-left : 3px;
+        padding-right : 0px;
+        margin-left : 2px;
+        width : 44%;
+    }
+    #_video{
+        width : 91%;
+        
+    }
+ }

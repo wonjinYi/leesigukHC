@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="EXPIRE" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>이시국 보건증</title>
+
+    <link rel="stylesheet" href="style.css?v=2020_05_17_04">
+    <link rel="shortcut icon" href="res/favicon.ico">
+    <link rel="icon" href="res/favicon.ico">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166298734-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166298734-1');
+    </script>
+    <!-- Google Analytics -->
+
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ont9t74d67"></script>
+
+    <!-- FOR PRODUCTION -->
+    <script src="https://gmousse.github.io/dataframe-js/dist/dataframe.min.js"></script>
+    
+
+    <!-- FOR DEVELOPMENT 
+    <script src="https://gmousse.github.io/dataframe-js/dist/dataframe.js"></script>
+    -->
+</head>
+<body>
+    <!--
+    <p style="padding: 10px; margin:0; text-align:center; 
+        background-color:#00E40A;"><b>아직 만들고있어요! 곧 완성됩니다!</b></p>
+    -->
+    <header>
+        <div id="logo" style="display:inline-block; vertical-align:bottom;">
+            <img src = "res/logo.png" onclick="location.href='index.html'" alt="logo" width="183px" height="100px">
+        </div>
+
+        <!-- 빈공간 시작 -->
+        <div style="display:inline-block; margin-left:calc( 95% - 315px ); "></div>
+        <!-- 빈공간 끝 -->
+
+        <div style="display:inline-block;">
+            <!-- <a id="btn_goindex" class="buttonBase" href="index.html">처음으로</a> -->
+            <a id="btn_report_forapp" class="buttonBase" href="https://forms.gle/vc5BQBcf9ULcAaUz9" target="_blank">오류신고</a>
+        </div>
+    </header>
+
+    <!-- 지역 선택버튼이 들어가는 공간입니다. -->
+    <nav>
+
+    </nav>
+
+    <article>
+        <div id="map" style="width:95%;height:500px;margin:0 auto;"></div>
+        <script type="text/javascript" src="script.js?v=2020_05_17_03"></script>
+        
+    </article>
+
+    <footer style="color:#A4A4A4;">
+        <p><br>비영리 공익목적 개인서비스입니다.
+            <br>이 서비스는 단순 참고용도로만 사용하시고, 정확한 정보는 의료기관으로 문의바랍니다.
+            <br>studioplug17@gmail.com
+        </p>
+
+        <p><br>이 서비스는 아래 오픈소스 / 서비스를 사용하였습니다
+            <br><b>dataframe-js</b> https://www.npmjs.com/package/dataframe-js (MIT Lisence, Copyright (c) 2016 Guillaume Mousnier)
+            <br><b>NAVER Maps API</b> https://navermaps.github.io/maps.js.ncp/
+            <br><b>Google SpreadsSheet</b> https://www.google.com/intl/ko_kr/sheets/about/
+        </p>
+    </footer>
+
+</body>
+</html>
