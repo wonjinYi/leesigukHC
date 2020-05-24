@@ -32,8 +32,14 @@ async function makeMarker(){
     });
 
     //정보창 생성
-    var infoMapURL = 'https://map.naver.com/v5/search/' + DATA[i]["기관명"];
-    //var infoMapURL = 'https://m.map.naver.com/search2/search.nhn?query=' + DATA[i]["기관명"]+'&sm=hty&style=v5';
+    var infoMapURL;
+	if(window.innerWidth<769){
+		infoMapURL = 'https://m.map.naver.com/search2/search.nhn?query=' + DATA[i]["기관명"]+'&sm=hty&style=v5';
+	}
+	else{
+		infoMapURL = 'https://map.naver.com/v5/search/' + DATA[i]["기관명"];
+	}
+    
     contentString = [
       '<div style="padding:10px; text-align:left; color:#262626;">',
       '   <a style="display:inline; text-decoration: none; font-size:20px; color:#262626;" href="'
