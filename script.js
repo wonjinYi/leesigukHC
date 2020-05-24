@@ -90,17 +90,30 @@ function selectMarkerType(isIssuing, type){
 // #######################################################################################################################
 // #######################################################################################################################
 
-// 네이버 맵 초기설정
+// 네이버 맵 생성
 var mapOptions = {
     center: new naver.maps.LatLng(37.550179, 127.073627),
     zoom: 12
 };
-document.getElementById('map').clientHeight = "80%";
+let map = new naver.maps.Map('map', mapOptions);
 
-var map = new naver.maps.Map('map', mapOptions);
+// 네이버 맵 크기조정
+window.addEventListener('DOMContentLoaded', function(){
+	resize();
+	window.addEventListener('resize', resize);
+});
 
+
+function resize(){
+	var mapWidth = window.innerWidth;
+	var mapHeight = window.innerHeight - document.getElementById('appHead').offsetHeight - document.getElementById('appFooter').offsetHeight;
+	var Size = new naver.maps.Size(mapWidth, mapHeight);
+	map.setSize(Size);
+}
+						
 //마커 및 정보창 생성
 makeMarker();
 
 //지역선택창 만들기
+
 

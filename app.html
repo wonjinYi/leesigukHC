@@ -36,7 +36,7 @@
     <p style="padding: 10px; margin:0; text-align:center; 
         background-color:#00E40A;"><b>아직 만들고있어요! 곧 완성됩니다!</b></p>
     -->
-    <header>
+    <header id="appHead">
         <div id="logo" style="display:inline-block; vertical-align:bottom;">
             <img src = "res/logo.png" onclick="location.href='index.html'" alt="logo" width="183px" height="100px">
         </div>
@@ -51,25 +51,24 @@
         </div>
     </header>
 
-    <!-- 지역 선택버튼이 들어가는 공간입니다. -->
+    <!-- 지역 선택버튼이 들어가는 공간입니다.width:100%;height:500px; -->
     <nav>
 
     </nav>
 
     <article>
-        <div id="map" style="width:95%;height:500px;margin:0 auto;"></div>
+        <div id="map" style="margin:0 auto;"></div>
         <script type="text/javascript" src="script.js?v=2020_05_17_03"></script>
         
     </article>
 
-    <footer style="color:#A4A4A4;">
+    <footer id="appFooter" style="color:#A4A4A4; font-size:12px;">
         <p><br>비영리 공익목적 개인서비스입니다.
             <br>이 서비스는 단순 참고용도로만 사용하시고, 정확한 정보는 의료기관으로 문의바랍니다.
-            <br>studioplug17@gmail.com
         </p>
 
-        <p><br>이 서비스는 아래 오픈소스 / 서비스를 사용하였습니다
-            <br><b>dataframe-js</b> https://www.npmjs.com/package/dataframe-js (MIT Lisence, Copyright (c) 2016 Guillaume Mousnier)
+        <p><br>아래 오픈소스/서비스를 사용하였습니다
+            <br><b>dataframe-js</b> https://www.npmjs.com/package/dataframe-js
             <br><b>NAVER Maps API</b> https://navermaps.github.io/maps.js.ncp/
             <br><b>Google SpreadsSheet</b> https://www.google.com/intl/ko_kr/sheets/about/
         </p>
