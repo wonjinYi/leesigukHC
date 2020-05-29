@@ -1,3 +1,6 @@
+LeesigukHC
+![leesiguklogo](./img/logo.png)
+
 # 라이센스와 적용범위
 license.md의 내용대로 BOB Please License를 적용합니다.
 적용 대상은 해당 repository에 있는 모든 리소스입니다.
