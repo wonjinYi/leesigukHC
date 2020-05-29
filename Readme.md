@@ -1,5 +1,5 @@
 LeesigukHC
-![leesiguklogo](./img/logo.png)
+![leesiguklogo](./res/logo.png)
 
 # 라이센스와 적용범위
 license.md의 내용대로 BOB Please License를 적용합니다.
