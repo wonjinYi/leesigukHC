@@ -98,8 +98,8 @@ function selectMarkerType(isIssuing, type){
 
 // 네이버 맵 생성
 var mapOptions = {
-    center: new naver.maps.LatLng(37.550179, 127.073627),
-    zoom: 12
+    center: new naver.maps.LatLng(36.583853, 128.119446),
+    zoom: 7
 };
 let map = new naver.maps.Map('map', mapOptions);
 
