@@ -30,7 +30,7 @@ license.md의 내용대로 BOB Please License를 적용합니다.
 1. 보건소 현황 : 시도, 시군구, 대표전화번호, 기관유형, 기관명, 주소, 위도, 경도, 일반용시행, 일반용가격, 시행판단근거
 > https://docs.google.com/spreadsheets/d/1G6WfRePThxwTO6hCypL2Jr2jxQoVSXbUVY7wqVp0iQE/edit?usp=sharing
 
-2. 건강진단결과서 발급 가능 민간의료기관 현황 : 시도, 시군구, 대표전화번호, 기관유형, 기고나명, 주소, 위도, 경고, 일반용시행, 일반용가격
+2. 건강진단결과서 발급 가능 민간의료기관 현황 : 시도, 시군구, 대표전화번호, 기관유형, 기관명, 주소, 위도, 경고, 일반용시행, 일반용가격
 > https://docs.google.com/spreadsheets/d/1JRMu2YDemwclWB1cB7fPJmboVnEp2EmzcT6W2eoO4Gg/edit?usp=sharing
 
 위 데이터는 "기초 데이터"를 기반으로 정리, 수정, 가공 및 추가수집(검색, 전화문의, 온라인문의 등)과정을 거쳐 구축하였습니다. 별도 협의없이 어떤 형태로든 변형해도 되고, 어떤 일이든 사용하셔도 됩니다.
