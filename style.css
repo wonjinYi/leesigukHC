@@ -13,13 +13,15 @@ a {
 header{
     text-align : center;
     padding-top : 10px;
-    /*padding-bottom : 10px;*/
+  	padding-bottom : 10px;
 }
+
 nav {
     text-align : center;
     /* padding-top : 10px; */
     padding-bottom : 10px;
 }
+
 article {
     display : block;
     text-align : center;
