@@ -120,7 +120,7 @@ function isWorking(isIssuing){
 
 function selectMarkerType(isIssuing, type){
   if(isIssuing=="FALSE"){return "marker_grey.png";}
-  else if(type=="보건소" || type=="보건지소"){return "marker_blue.png";}
+  else if(type=="보건소" || type=="일반보건지소" || type=="통합보건지소"){return "marker_blue.png";}
   else if(type=="민간병원" || type=="종합병원" || type=="의원"){return "marker_green.png";}
 }
 
